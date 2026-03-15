@@ -82,6 +82,30 @@ body {
 body.dragging-col * { cursor: col-resize !important; }
 body.dragging-row * { cursor: row-resize !important; }
 
+/* ── Work card link ───────────────────────── */
+.work-card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.work-card-link:hover {
+  background: #F5F5F5;
+}
+
+/* ── Work page timeline ───────────────────── */
+@media (max-width: 639px) {
+  .timeline-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .timeline-left {
+    display: none;
+  }
+}
+
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 1023px) {
   .bento-grid {

@@ -24,7 +24,7 @@ export default function ResearchCard() {
           marginBottom: "8px",
         }}
       >
-        论文 · 2023
+        论文 · APSEC 2024
       </div>
 
       {/* Paper title */}
@@ -37,11 +37,17 @@ export default function ResearchCard() {
           marginBottom: "8px",
         }}
       >
-        论文标题：研究方向一句话概括
+        基于大语言模型的 Pull Request
+        <br />
+        重复检测
       </p>
 
       {/* Journal */}
-      <p style={{ fontSize: "10px", color: "#aaa" }}>期刊名称</p>
+      <p style={{ fontSize: "10px", color: "#aaa", lineHeight: 1.8 }}>
+        APSEC 2024 · 国际软件工程会议
+        <br />
+        Precision@1: 0.929 · Recall@1: 0.507
+      </p>
     </div>
   );
 }

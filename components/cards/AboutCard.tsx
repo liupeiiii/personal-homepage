@@ -37,8 +37,13 @@ export default function AboutCard() {
           lineHeight: 1.8,
         }}
       >
-        有学术研究背景，发表过论文。热爱旅行摄影，走过多个城市。
-        业余时间跳舞、做手工，也在用 Vibe Coding 把想法变成现实。
+        计算机背景的产品经理，中南大学软件工程本科 +
+        <br />
+        计算机技术硕士。熟悉 LLM 评测方法论，有 APSEC
+        <br />
+        国际会议论文发表经历。热爱旅行摄影、跳舞与手工创作，
+        <br />
+        也在用 Vibe Coding 把想法变成现实。
       </p>
     </div>
   );

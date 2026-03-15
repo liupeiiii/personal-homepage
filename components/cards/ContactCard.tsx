@@ -1,7 +1,6 @@
 const links = [
-  { label: "betty@email.com", href: "mailto:betty@email.com" },
-  { label: "LinkedIn",        href: "#" },
-  { label: "GitHub",          href: "#" },
+  { label: "pei_3164@163.com",           href: "mailto:pei_3164@163.com" },
+  { label: "https://github.com/liupeiiii", href: "https://github.com/liupeiiii" },
 ];
 
 export default function ContactCard() {

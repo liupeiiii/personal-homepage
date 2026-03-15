@@ -1,6 +1,6 @@
-const highlighted = ["产品规划", "用户研究", "Vibe Coding"];
-const normal = ["数据分析", "竞品分析", "原型设计", "需求文档", "项目管理", "A/B 测试", "增长策略"];
-const tools = ["Figma", "SQL", "Claude Code", "Next.js", "Tailwind"];
+const highlighted = ["产品规划", "LLM评测", "Vibe Coding"];
+const normal = ["用户研究", "数据分析", "AB实验", "竞品分析", "原型设计", "需求文档", "指标体系构建", "增长策略"];
+const tools = ["Python", "SQL", "Figma", "Claude Code"];
 
 export default function SkillsCard() {
   return (

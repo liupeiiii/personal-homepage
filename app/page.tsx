@@ -1,5 +1,5 @@
-import BentoGrid from "@/components/BentoGrid";
+import BentoResizable from "@/components/BentoResizable";
 
 export default function Home() {
-  return <BentoGrid />;
+  return <BentoResizable />;
 }

@@ -1,6 +1,6 @@
 const jobs = [
-  { company: "公司 A", role: "产品经理", note: "核心成就占位", period: "2023–至今" },
-  { company: "公司 B", role: "产品经理", note: "核心成就占位", period: "2022–2023" },
+  { company: "OPPO · 文件管理（轮岗）", role: "软件产品经理", note: "主导17.0规划，驱动产品AI化转型；主导60+项体验优化落地", period: "2025.11–2026.03" },
+  { company: "OPPO · 搜索业务组（实习）", role: "搜索策略产品经理", note: "构建被动搜索评测体系；提升被动搜索词条质量", period: "2024.06–2024.09" },
 ];
 
 export default function WorkCard() {
@@ -29,11 +29,13 @@ export default function WorkCard() {
           marginBottom: "16px",
         }}
       >
-        Vibe Coding Portfolio
+        COLOROS
+        <br />
+        FILE MGR
       </div>
 
       {/* Job list */}
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", flexDirection: "column", marginBottom: "14px" }}>
         {jobs.map((job, i) => (
           <div
             key={job.company}
@@ -66,6 +68,20 @@ export default function WorkCard() {
             </span>
           </div>
         ))}
+      </div>
+
+      {/* Tool bar */}
+      <div
+        style={{
+          paddingTop: "12px",
+          borderTop: "0.5px solid #ddd",
+          fontSize: "10px",
+          color: "#bbb",
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+        }}
+      >
+        Next.js · Tailwind · Vercel
       </div>
     </div>
   );

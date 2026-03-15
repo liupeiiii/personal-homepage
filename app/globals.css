@@ -126,6 +126,13 @@ body.dragging-row * { cursor: row-resize !important; }
   }
 }
 
+/* ── Yoyo page ────────────────────────────── */
+@media (max-width: 639px) {
+  .yoyo-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 1023px) {
   .bento-grid {

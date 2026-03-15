@@ -2,7 +2,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import HeroCard from '@/components/cards/HeroCard';
 import SkillsCard from '@/components/cards/SkillsCard';
-import AboutCard from '@/components/cards/AboutCard';
+import YoyoCard from '@/components/cards/YoyoCard';
 import ContactCard from '@/components/cards/ContactCard';
 import WorkCard from '@/components/cards/WorkCard';
 import ResearchCard from '@/components/cards/ResearchCard';
@@ -19,7 +19,7 @@ const DEFAULT_ROWS: RowFr = [1, 1, 1];
 const CELLS = [
   { Component: HeroCard,     gridColumn: '1',     gridRow: '1 / 3' },
   { Component: SkillsCard,   gridColumn: '2 / 4', gridRow: '1'     },
-  { Component: AboutCard,    gridColumn: '2',     gridRow: '2'     },
+  { Component: YoyoCard,     gridColumn: '2',     gridRow: '2'     },
   { Component: ContactCard,  gridColumn: '3',     gridRow: '2'     },
   { Component: WorkCard,     gridColumn: '1',     gridRow: '3'     },
   { Component: ResearchCard, gridColumn: '2',     gridRow: '3'     },

@@ -1,9 +1,9 @@
+import YoyoSVG from '@/components/ui/YoyoSVG';
+
 const tags = ["互联网 PM", "AI 评测", "Vibe Coding", "旅行摄影", "跳舞", "手工"];
 
 export default function HeroCard() {
   return (
-    // 不加 overflow:hidden（cell wrapper 已处理），不加 z-index，
-    // 避免意外创建新层叠上下文而遮挡分隔条
     <div
       style={{
         padding: "36px 32px",
@@ -13,8 +13,7 @@ export default function HeroCard() {
         position: "relative",
       }}
     >
-      {/* Avatar — 绝对定位于右下角，无 z-index、无 pointer-events 限制，
-          让 CSS :hover 正常触发；分隔条靠 z-index:50 保证在上层 */}
+      {/* Avatar — 绝对定位于右下角 */}
       <div
         className="avatar-wrapper"
         style={{
@@ -31,9 +30,22 @@ export default function HeroCard() {
         />
       </div>
 
-      {/* 文字内容 — 靠 DOM 顺序在 avatar 之后渲染，自然叠于上方 */}
+      {/* 小柚子装饰 — 右下角，半透明 */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "48px",
+          right: "16px",
+          pointerEvents: "none",
+        }}
+      >
+        <YoyoSVG size={40} opacity={0.15} />
+      </div>
+
+      {/* 文字内容 */}
       <div style={{ position: "relative" }}>
-        <div style={{ marginBottom: "24px" }}>
+        {/* 大字标题 */}
+        <div style={{ marginBottom: "20px" }}>
           {["你好，", "我是刘佩", "产品经理"].map((line) => (
             <div
               key={line}
@@ -50,23 +62,27 @@ export default function HeroCard() {
           ))}
         </div>
 
+        {/* 简介（合并 About 内容） */}
         <p
           style={{
             fontSize: "12px",
             color: "#777",
-            lineHeight: 1.8,
+            lineHeight: 1.85,
             maxWidth: "220px",
+            margin: 0,
           }}
         >
-          OPPO · 产品经理
+          OPPO · AI 评测产品经理方向
           <br />
-          计算机技术硕士 · 中南大学
+          计算机技术硕士 · 中南大学软件工程
           <br />
-          热爱用产品思维解决真实问题，相信技术与人文可以共存。
+          热爱用产品思维解决真实问题，
+          <br />
+          相信技术与人文可以共存。
         </p>
       </div>
 
-      {/* 标签 — 固定左下角，宽度限制不与插画重叠 */}
+      {/* 标签 — 固定左下角 */}
       <div
         style={{
           display: "flex",

@@ -193,6 +193,8 @@ export default function PaperCard({
         <span style={{ fontSize: '11px', color: '#bbb' }}>{period}</span>
         <a
           href={pdfHref}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             fontSize: '13px',
             fontWeight: 600,
@@ -200,7 +202,7 @@ export default function PaperCard({
             textDecoration: 'none',
           }}
         >
-          查看论文 PDF →
+          查看论文 IEEE →
         </a>
       </div>
     </div>

@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import PaperCard from '@/components/research/PaperCard';
-import ProjectCard from '@/components/research/ProjectCard';
 
 const paper = {
   venueBadge: 'APSEC 2024',
@@ -21,21 +20,7 @@ const paper = {
     { number: '+0.5pp', label: 'Recall 提升', accent: true },
   ],
   period: '2024.03 — 2024.10',
-  pdfHref: '#',
-};
-
-const explorationProject = {
-  badge: 'LLM 评测',
-  title: '全搜结果页满意度自动化评测',
-  description:
-    '在 OPPO 主导落地 LLM-as-a-Judge 自动化评测工程实践，将人工季度评测升级为模型每日评测，大幅提升业务迭代反馈时效。',
-  bullets: [
-    '将复杂评测标准工程化为模型逻辑指令，构建自动化评测流程',
-    '多轮人机对齐迭代，各维度准确率最终达 90%+',
-    '评测成本控制在 10 元/天，频率从季度提升至每日',
-  ],
-  period: '2026.02 — 2026.03',
-  status: '工程实践',
+  pdfHref: 'https://ieeexplore.ieee.org/document/10967276',
 };
 
 const education = [
@@ -50,15 +35,6 @@ const education = [
     period: '2018.09 — 2022.06',
   },
 ];
-
-const metricVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.3, delay: i * 0.08 },
-  }),
-};
 
 const eduVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -135,7 +111,7 @@ export default function ResearchPage() {
             Research
           </h1>
           <p style={{ fontSize: '13px', color: '#999', marginTop: '8px', letterSpacing: '0.04em' }}>
-            学术研究 · 1 篇论文 · 1 个探索项目
+            学术研究 · 1 篇论文
           </p>
         </motion.div>
 
@@ -152,8 +128,7 @@ export default function ResearchPage() {
           }}
         >
           计算机技术硕士背景，研究方向为大语言模型应用。
-          在 APSEC 2024 国际软件工程会议发表论文，
-          并在 OPPO 主导落地 LLM 自动化评测工程实践。
+          在 APSEC 2024 国际软件工程会议发表论文。
         </motion.p>
 
         <motion.div
@@ -177,21 +152,7 @@ export default function ResearchPage() {
           </motion.div>
         </div>
 
-        {/* ── Section 2: Exploration project ── */}
-        <div style={{ marginTop: '80px', borderTop: '0.5px solid #eee', paddingTop: '60px' }}>
-          <SectionTitle>探索项目</SectionTitle>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.45, delay: 0.1 }}
-          >
-            <ProjectCard {...explorationProject} />
-          </motion.div>
-        </div>
-
-        {/* ── Section 3: Education ── */}
+        {/* ── Section 2: Education ── */}
         <div style={{ marginTop: '80px', borderTop: '0.5px solid #eee', paddingTop: '60px' }}>
           <SectionTitle>学术背景</SectionTitle>
 

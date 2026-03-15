@@ -116,6 +116,16 @@ body.dragging-row * { cursor: row-resize !important; }
   }
 }
 
+/* ── Research page ────────────────────────── */
+@media (max-width: 767px) {
+  .research-metrics {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .research-edu {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 1023px) {
   .bento-grid {

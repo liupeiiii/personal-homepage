@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import YoyoSVG from '@/components/ui/YoyoSVG';
+import CatSVG from '@/components/ui/Image1';
 
 export default function YoyoCard() {
   return (
@@ -7,24 +7,14 @@ export default function YoyoCard() {
       <div
         style={{
           height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
+          position: 'relative',
         }}
       >
         {/* Top text area */}
         <div style={{ padding: '16px 18px 0' }}>
-          <span
-            style={{
-              fontSize: '10px',
-              border: '1px solid #111',
-              padding: '2px 8px',
-              letterSpacing: '0.06em',
-              display: 'inline-block',
-              marginBottom: '8px',
-            }}
-          >
+          <div style={{ fontSize: '10px', color: '#999', marginBottom: '6px', letterSpacing: '0.06em' }}>
             🐱 我的猫
-          </span>
+          </div>
           <div
             style={{
               fontSize: '18px',
@@ -40,29 +30,17 @@ export default function YoyoCard() {
           </div>
         </div>
 
-        {/* Center: cat illustration */}
+        {/* Bottom-right: cat illustration */}
         <div
+          className="cat-wrapper"
           style={{
-            flex: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '8px',
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
+            height: '72%',
           }}
         >
-          <YoyoSVG size={72} />
-        </div>
-
-        {/* Bottom hint */}
-        <div
-          style={{
-            fontSize: '10px',
-            color: '#bbb',
-            textAlign: 'right',
-            padding: '0 14px 12px',
-          }}
-        >
-          点击查看更多 →
+          <CatSVG style={{ height: '100%', width: 'auto', display: 'block' }} />
         </div>
       </div>
     </Link>

@@ -117,9 +117,6 @@ export default function WorkPage() {
         <Link
           href="/"
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
             fontSize: '13px',
             color: '#111',
             textDecoration: 'none',
@@ -176,8 +173,29 @@ export default function WorkPage() {
           >
             工作经历 · 3段
           </p>
-          <div style={{ marginTop: '40px', borderTop: '1px solid #111' }} />
         </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          style={{
+            fontSize: '13px',
+            color: '#555',
+            lineHeight: 1.8,
+            maxWidth: '560px',
+            marginTop: '16px',
+          }}
+        >
+          产品经理方向，专注搜索策略与 AI 评测。
+          在 OPPO 先后参与搜索增长、文件管理 AI 化及 LLM 自动化评测项目。
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
+          style={{ marginTop: '40px', borderTop: '1px solid #111' }} />
 
         {/* Timeline */}
         <div style={{ marginTop: '60px' }}>

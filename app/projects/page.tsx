@@ -210,12 +210,12 @@ export default function ProjectsPage() {
           className="projects-stats"
           style={{
             marginTop: '60px',
-            borderTop: '0.5px solid #eee',
+            borderTop: '1px solid #111',
             paddingTop: '40px',
             display: 'grid',
             gridTemplateColumns: '1fr 1fr 1fr',
             gap: '1px',
-            background: '#eee',
+            background: '#111',
           }}
         >
           {stats.map((s, i) => (

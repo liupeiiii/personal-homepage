@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import YoyoSVG from '@/components/ui/YoyoSVG';
+import CatSVG from '@/components/ui/Image1';
 
 const placeholders = [
   { key: 'main', isMain: true },
@@ -154,7 +154,7 @@ export default function YoyoPage() {
             >
               {p.isMain ? (
                 <>
-                  <YoyoSVG size={60} opacity={0.3} />
+                  <CatSVG width={60} height={60} style={{ opacity: 0.3 }} />
                   <span style={{ fontSize: '11px', color: '#ccc', letterSpacing: '0.04em' }}>
                     柚子的照片（待上传）
                   </span>

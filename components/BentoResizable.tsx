@@ -6,7 +6,7 @@ import YoyoCard from '@/components/cards/YoyoCard';
 import ContactCard from '@/components/cards/ContactCard';
 import WorkCard from '@/components/cards/WorkCard';
 import ResearchCard from '@/components/cards/ResearchCard';
-import HobbyCard from '@/components/cards/HobbyCard';
+import AboutCard from '@/components/cards/AboutCard';
 
 type ColFr = [number, number, number];
 type RowFr = [number, number, number];
@@ -23,7 +23,7 @@ const CELLS = [
   { Component: ContactCard,  gridColumn: '3',     gridRow: '2'     },
   { Component: WorkCard,     gridColumn: '1',     gridRow: '3'     },
   { Component: ResearchCard, gridColumn: '2',     gridRow: '3'     },
-  { Component: HobbyCard,    gridColumn: '3',     gridRow: '3'     },
+  { Component: AboutCard,    gridColumn: '3',     gridRow: '3'     },
 ] as const;
 
 function toTemplate(frs: number[]) {
